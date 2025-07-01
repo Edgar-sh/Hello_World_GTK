@@ -21,7 +21,7 @@ class MeuPrimeiroApp(Gtk.Application):
                         #e métodos dentro de um método.
         # Chamamos o construtor da classe pai para que ela se configure
         # O 'application_id' é um identificador para o app
-        super().__init__(application_id='br.com.exemplo.meuappgtk3')
+        super().__init__(application_id='br.com.exemplo.meuprimeiroapp')
 
         # self.connect serve para conectar um sinal à uma função
         # O sinal "activate" é emitido pela classe pai, quando ele é iniciado
@@ -31,7 +31,7 @@ class MeuPrimeiroApp(Gtk.Application):
 
     # Nosso "callback", interface do app vai ser construida aqui.
     def quando_ativar(self, app): # app nada mais é que um nome génerico.
-        # Criando a janela principal, aparentemente é melhor usar Gtk.ApplicationWindows
+        # Criando a janela principal, aparentemente é melhor usar Gtk.ApplicationWindow
         # ao invés de Gtk.Window
         janela = Gtk.ApplicationWindow(application=app)
         janela.set_title("Meu primeiro app")

@@ -38,7 +38,7 @@ class MeuPrimeiroApp(Gtk.Application):
         janela.set_default_size(400, 250)
 
         # Criando um widget simples de texto no aplicativo. (um rótulo)
-        simple_text = Gtk.Label(label="Meu primeiro app usando GTK")
+        simple_text = Gtk.Label(label="Hello World")
 
         # Adicionando nosso texto(label) à nossa janela.
         # Em GTK4, uma janela só pode ter um filho direto
